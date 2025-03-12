@@ -1,91 +1,177 @@
+/* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
   color: #333;
+  background-color: #f4f4f4;
 }
 
 header {
-  background: #333;
-  color: #fff;
-  padding: 20px 0;
+  background-color: #005f73;
+  color: #ffffff;
+  padding: 10px 0;
   text-align: center;
 }
 
 header h1 {
   margin: 0;
+  font-size: 2.5rem;
 }
 
 header p {
   margin: 5px 0 0;
+  font-size: 1.2rem;
 }
 
+#Resume {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Sections */
 section {
-  padding: 20px;
-  margin: 20px auto;
+  padding: 3px 24px;
+  margin: 10px auto;
   max-width: 800px;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-  border-bottom: 2px solid #333;
-  padding-bottom: 10px;
+  color: #005f73;
 }
 
-ul {
+/* Profiles Section */
+#profiles ul {
   list-style-type: none;
   padding: 0;
 }
 
-ul li {
+#profiles ul li {
   margin: 10px 0;
 }
 
-ul li a {
+#profiles ul li a {
   text-decoration: none;
-  color: #0077b5;
+  color: #0a9396;
+  font-weight: bold;
 }
 
-ul li a:hover {
-  text-decoration: underline;
+#profiles ul li a:hover {
+  color: #005f73;
+}
+
+/* Projects Section */
+.project-sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
 
 .project {
-  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
 }
 
 .project h3 {
-  margin: 0;
+  margin-top: 0;
+  color: #005f73;
 }
 
 .project p {
-  margin: 5px 0;
+  font-size: 0.9rem;
+  color: #666;
 }
 
 .project a {
   display: inline-block;
   margin-top: 10px;
   padding: 8px 16px;
-  background: #0077b5;
-  color: #fff;
+  background-color: #0a9396;
+  color: white;
   text-decoration: none;
   border-radius: 4px;
+  font-size: 0.9rem;
 }
 
 .project a:hover {
-  background: #005f8a;
+  background-color: #005f73;
 }
 
+/* Footer */
 footer {
   text-align: center;
   padding: 10px 0;
-  background: #333;
-  color: #fff;
+  background-color: #005f73;
+  color: white;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .project-sections {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Dark Mode */
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode header {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode section {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode h2 {
+  color: #0a9396;
+}
+
+body.dark-mode .project {
+  background-color: #2d2d2d;
+  border-color: #444;
+}
+
+body.dark-mode .project p {
+  color: #ccc;
+}
+
+body.dark-mode .resume-button {
+  background-color: #0a9396;
+  color: #ffffff;
+}
+
+body.dark-mode .resume-button:hover {
+  background-color: #005f73;
+}
+
+/* Dark Mode Toggle Button */
+.dark-mode-toggle {
   position: fixed;
-  width: 100%;
-  bottom: 0;
+  top: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  background-color: #0a9396;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.dark-mode-toggle:hover {
+  background-color: #005f73;
 }
