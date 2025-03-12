@@ -1,182 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Erick Meikoki - Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script src="./script.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Erick Meikoki - Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <script src="./script.js"></script>
-</head>
-
-<body>
-  <header>
-    <div class="header-content">
-      <h1>Erick Meikoki</h1>
-      <p>Full Stack Web Developer</p>
-    </div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#Resume">Resume</a></li>
-      </ul>
-    </nav>
-    <div class="darkmode">
-      <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
-        🌙 Dark Mode
-      </button>
-    </div>
-  </header>
-
-  <section id="Resume">
-    <div>
-      <h2>CV Attached</h2>
-      <a href="Erick_Meikoki_Resume.pdf" download class="resume-button">Download Resume</a>
-    </div>
-    <div>
-      <h2>LinkedIn Profile</h2>
-      <a href="https://www.linkedin.com/in/erick-meikoki-ba4426158/" target="_blank" class="resume-button"
-        aria-label="View LinkedIn Profile">LinkedIn</a>
-    </div>
-    <div>
-      <h2>Github</h2>
-      <a href="https://github.com/boredinthecrib?tab=repositories" target="_blank" class="resume-button"
-        aria-label="View Github Profile">GitHub</a>
-    </div>
-  </section>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      Full stack web developer with 5+ years of web development. Currently, as
-      an Associate Software Developer at ServiceNow. I'm passionate about
-      enhancing accessibility, utilizing AI-powered tools to streamline
-      development, and building impactful projects.
-    </p>
-  </section>
-
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills-container">
-      <div class="skill-category">
-        <h3>Frontend</h3>
-        <ul class="skills-list">
-          <li><span>HTML5</span></li>
-          <li><span>CSS3</span></li>
-          <li><span>JavaScript</span></li>
-          <li><span>React</span></li>
-          <li><span>TailwindCSS</span></li>
+  <body>
+    <header>
+      <div class="header-content">
+        <h1>Erick Meikoki</h1>
+        <p>Full Stack Web Developer</p>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#Resume">Resume</a></li>
         </ul>
+      </nav>
+      <div class="darkmode">
+        <button
+          id="dark-mode-toggle"
+          class="dark-mode-toggle"
+          aria-label="Toggle dark mode">
+          🌙 Dark Mode
+        </button>
       </div>
-      <div class="skill-category">
-        <h3>Backend</h3>
-        <ul class="skills-list">
-          <li><span>Node.js</span></li>
-          <li><span>Firebase</span></li>
-          <li><span>PostgreSQL</span></li>
-          <li><span>REST APIs</span></li>
-        </ul>
-      </div>
-      <div class="skill-category">
-        <h3>Tools & Others</h3>
-        <ul class="skills-list">
-          <li><span>Git</span></li>
-          <li><span>Responsive Design</span></li>
-          <li><span>AI Integration</span></li>
-          <li><span>Accessibility</span></li>
-        </ul>
-      </div>
-    </div>
-  </section>
+    </header>
 
-  <section id="projects">
-    <h2>Projects</h2>
-
-    <div class="project-sections">
-      <div class="project">
-        <h3>Cats Cradle</h3>
-        <img src="./img/cats.jpeg" alt="Poster image" loading="lazy" />
-        <p>A market place app where users can list/sell items.</p>
-        <p>Tech used: React, Firebase, HTML/CSS/Js</p>
-        <a href="https://catscradle-firebasetry5.web.app/" target="_blank">Visit Project</a>
+    <section id="Resume">
+      <div>
+        <h2>CV Attached</h2>
+        <a href="Erick_Meikoki_Resume.pdf" download class="resume-button"
+          >Download Resume</a
+        >
       </div>
-      <div class="project">
-        <h3>Movie Review App</h3>
-        <img src="./img/box.png" alt="Poster image" loading="lazy" />
-        <p>An app to review and discover movies.</p>
-        <p>
-          Tech used: React, Postgress, TMDB APi, OAuth, TailWind, HTML/CSS/Js
-        </p>
-        <a href="https://tinyurl.com/moviereviewapp" target="_blank">Visit Project</a>
+      <div>
+        <h2>LinkedIn Profile</h2>
+        <a
+          href="https://www.linkedin.com/in/erick-meikoki-ba4426158/"
+          target="_blank"
+          class="resume-button"
+          aria-label="View LinkedIn Profile"
+          >LinkedIn</a
+        >
       </div>
-      <div class="project">
-        <h3>Dynamic Calc</h3>
-        <img src="./img/calc.png" alt="Poster image" loading="lazy" />
-        <p>A calculator that maintains the logs.</p>
-        <p>Tech used: React, HTML/CSS/Js</p>
-        <a href="https://dynamiccalc1.netlify.app/" target="_blank">Visit Project</a>
+      <div>
+        <h2>Github</h2>
+        <a
+          href="https://github.com/boredinthecrib?tab=repositories"
+          target="_blank"
+          class="resume-button"
+          aria-label="View Github Profile"
+          >GitHub</a
+        >
       </div>
+    </section>
 
-    <div class="project-filter">
-      <button class="filter-btn active" data-filter="all">All</button>
-      <button class="filter-btn" data-filter="react">React</button>
-      <button class="filter-btn" data-filter="firebase">Firebase</button>
-      <button class="filter-btn" data-filter="api">API</button>
-    </div>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Full stack web developer with 5+ years of web development. Currently, as
+        an Associate Software Developer at ServiceNow. I'm passionate about
+        enhancing accessibility, utilizing AI-powered tools to streamline
+        development, and building impactful projects.
+      </p>
+    </section>
 
-
-      <div class="project">
-        <h3>Google Keep</h3>
-        <img src="./img/Keep.png" alt="Poster image" loading="lazy" />
-        <p>A Google Keep clone where users can write journals.</p>
-        <p>Tech used: React, HTML/CSS/Js</p>
-        <a href="https://csb-quduk-rnxwifswa.vercel.app/" target="_blank">Visit Project</a>
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <div class="skill-category">
+          <h3>Frontend</h3>
+          <ul class="skills-list">
+            <li><span>HTML5</span></li>
+            <li><span>CSS3</span></li>
+            <li><span>JavaScript</span></li>
+            <li><span>React</span></li>
+            <li><span>TailwindCSS</span></li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Backend</h3>
+          <ul class="skills-list">
+            <li><span>Node.js</span></li>
+            <li><span>Firebase</span></li>
+            <li><span>PostgreSQL</span></li>
+            <li><span>REST APIs</span></li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Tools & Others</h3>
+          <ul class="skills-list">
+            <li><span>Git</span></li>
+            <li><span>Responsive Design</span></li>
+            <li><span>AI Integration</span></li>
+            <li><span>Accessibility</span></li>
+          </ul>
+        </div>
       </div>
-      <div class="project">
-        <h3>Netflix Homepage</h3>
-        <img src="./img/netflix.jpg" alt="Poster image" loading="lazy" />
-        <p>A clone of Netflix homepage.</p>
-        <p>Tech used: React, TMDB APi, HTML/CSS/Js</p>
-        <a href="https://netflix-clone-5b7d6.web.app/" target="_blank">Visit Project</a>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form id="contact-form">
-      <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required />
-      </div>
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required />
-      </div>
-      <div class="form-group">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-      </div>
-      <button type="submit" class="submit-btn">Send Message</button>
-    </form>
-  </section>
+    <section id="projects">
+      <h2>Projects</h2>
 
-  <footer>
-    <div class="social-links">
-      <a href="https://www.linkedin.com/in/erick-meikoki-ba4426158/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/boredinthecrib" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-    </div>
-    <p>&copy; 2023 Erick Meikoki. All rights reserved.</p>
-  </footer>
+      <div class="project-sections">
+        <div class="project">
+          <h3>Cats Cradle</h3>
+          <img src="./img/cats.jpeg" alt="Poster image" loading="lazy" />
+          <p>A market place app where users can list/sell items.</p>
+          <p>Tech used: React, Firebase, HTML/CSS/Js</p>
+          <a href="https://catscradle-firebasetry5.web.app/" target="_blank"
+            >Visit Project</a
+          >
+        </div>
+        <div class="project">
+          <h3>Movie Review App</h3>
+          <img src="./img/box.png" alt="Poster image" loading="lazy" />
+          <p>An app to review and discover movies.</p>
+          <p>
+            Tech used: React, Postgress, TMDB APi, OAuth, TailWind, HTML/CSS/Js
+          </p>
+          <a href="https://tinyurl.com/moviereviewapp" target="_blank"
+            >Visit Project</a
+          >
+        </div>
+        <div class="project">
+          <h3>Dynamic Calc</h3>
+          <img src="./img/calc.png" alt="Poster image" loading="lazy" />
+          <p>A calculator that maintains the logs.</p>
+          <p>Tech used: React, HTML/CSS/Js</p>
+          <a href="https://dynamiccalc1.netlify.app/" target="_blank"
+            >Visit Project</a
+          >
+        </div>
 
-  <script src="script.js"></script>
-</body>
+        <div class="project">
+          <h3>Google Keep</h3>
+          <img src="./img/Keep.png" alt="Poster image" loading="lazy" />
+          <p>A Google Keep clone where users can write journals.</p>
+          <p>Tech used: React, HTML/CSS/Js</p>
+          <a href="https://csb-quduk-rnxwifswa.vercel.app/" target="_blank"
+            >Visit Project</a
+          >
+        </div>
+        <div class="project">
+          <h3>Netflix Homepage</h3>
+          <img src="./img/netflix.jpg" alt="Poster image" loading="lazy" />
+          <p>A clone of Netflix homepage.</p>
+          <p>Tech used: React, TMDB APi, HTML/CSS/Js</p>
+          <a href="https://netflix-clone-5b7d6.web.app/" target="_blank"
+            >Visit Project</a
+          >
+        </div>
+      </div>
+    </section>
 
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </section>
+
+    <footer>
+      <div class="social-links">
+        <a
+          href="https://www.linkedin.com/in/erick-meikoki-ba4426158/"
+          target="_blank"
+          aria-label="LinkedIn"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a
+          href="https://github.com/boredinthecrib"
+          target="_blank"
+          aria-label="GitHub"
+          ><i class="fab fa-github"></i
+        ></a>
+      </div>
+      <p>&copy; 2025 Erick Meikoki. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
 
-  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
-    <i class="fas fa-arrow-up"></i>
-  </button>
+<button id="back-to-top" class="back-to-top" aria-label="Back to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
